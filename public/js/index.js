@@ -1,18 +1,22 @@
-// Initialize the FirebaseUI Widget using Firebase.
-const ui = new firebaseui.auth.AuthUI(firebase.auth());
+const db = firebase.firestore();
 
-const uiConfig = {
-    // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
-    signInFlow: 'popup',
-    signInSuccessUrl: '/colleges',
-    signInOptions: [
-        // Leave the lines as is for the providers you want to offer your users.
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID
-    ],
-    // Terms of service url.
-    tosUrl: '/tos',
-    // Privacy policy url.
-    privacyPolicyUrl: '/privacy'
-};
+const collegesDiv = document.getElementById('colleges');
 
-ui.start('#firebaseui-auth-container', uiConfig);
+function renderCollege(name, url, id) {
+    return `<div class="card" style="width: 18rem;">
+            <img src="${url}" class="card-img-top" >
+            <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <a href="/read?college=${id}" class="btn btn-primary">Read More</a>
+            </div>
+        </div>`;
+}
+
+db.collection('colleges').get().then((snapshot) => {
+    const colleges = snapshot.docs.map(doc => {
+        const {name, url} = doc.data();
+        return renderCollege(name, url, doc.id);
+    });
+
+    collegesDiv.innerHTML = colleges.join('');
+});
