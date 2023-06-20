@@ -1,6 +1,9 @@
 const db = firebase.firestore();
 
 const collegesDiv = document.getElementById('colleges');
+const searchInput = document.getElementById('search');
+
+let colleges = [];
 
 function renderCollege(name, url, id) {
     return `<div class="card" style="width: 18rem;">
@@ -13,10 +16,17 @@ function renderCollege(name, url, id) {
 }
 
 db.collection('colleges').get().then((snapshot) => {
-    const colleges = snapshot.docs.map(doc => {
-        const {name, url} = doc.data();
-        return renderCollege(name, url, doc.id);
-    });
+    colleges = snapshot.docs.map(doc => ({id: doc.id, ...doc.data()}));
+    collegesDiv.innerHTML = colleges
+        .map(({name, url, id}) => renderCollege(name, url, id))
+        .join('');
+});
 
-    collegesDiv.innerHTML = colleges.join('');
+
+searchInput.addEventListener('keyup', (e) => {
+    const v = e.target.value;
+    console.log(v)
+    collegesDiv.innerHTML = colleges.filter(({name}) => !v || name.toLowerCase().includes(v))
+        .map(({name, url, id}) => renderCollege(name, url, id))
+        .join('');
 });
