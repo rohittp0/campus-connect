@@ -31,7 +31,7 @@ body {
 }
 .container {
     display: inline-block;
-    background: url(https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80)
+    background: url(https://www.telegraph.co.uk/content/dam/news/2016/05/17/1222044_News__students_throw_mortarboards_-_JULY_14___trans_NvBQzQNjv4BqTh3H5BemKyhXFKdcxJGxV7c8h33CQspnMpifI37ZQX8.jpg)
     no-repeat;
     background-size: cover;
 
@@ -104,20 +104,23 @@ button {
 }
 
 .content h1 {
+    
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: clamp(0.7rem, 0.5rem + 2vw, 30px);
+    font-size: clamp(0.8rem, 0.rem + 2vw, 30px);
+    color:lemonchiffon
 }
 
 .content h3 {
     font-size: 20px;
-    color: #fff;
+    color: lavenderblush;
     letter-spacing: 2px;
-    font-weight: lighter;
+    font-weight: bolder;
+
 }
 
 .content p {
-    color: #dadada;
+    color: whit;
     font-size: clamp(0.7rem, 0.5rem + 2vw, 16px);
 
     text-shadow: 2px 2px 8px #000;
@@ -361,8 +364,10 @@ button {
 /* forest forest forest forest forest forest  */
 
 .forest {
-    background: url(https://raw.githubusercontent.com/Nis-chal/web-dev/main/images/s1.jpg);
+    background: url(https://hips.hearstapps.com/hmg-prod/images/berry-college-historic-campus-at-twilight-royalty-free-image-1652127954.jpg?crop=1.00xw:0.752xh;0.00160xw,0.120xh&resize=1200:*);
     padding-bottom: 4%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .forest--text {
     display: block;
@@ -375,7 +380,8 @@ button {
 }
 
 .forest__heading > h3 {
-    color: #a3c962;
+    font-size: larger;
+    color: white;
 }
 
 .forest__heading > h1 {
