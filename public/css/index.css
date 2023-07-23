@@ -23,16 +23,16 @@ h6 {
     letter-spacing: 1px;
     font-family: "Playfair Display", serif;
 }
+
 body {
     width: 100vw;
     overflow: hidden;
     overflow-y: scroll;
     font-family: "Open Sans", sans-serif;
 }
+
 .container {
-    display: inline-block;
-    background: url(https://www.telegraph.co.uk/content/dam/news/2016/05/17/1222044_News__students_throw_mortarboards_-_JULY_14___trans_NvBQzQNjv4BqTh3H5BemKyhXFKdcxJGxV7c8h33CQspnMpifI37ZQX8.jpg)
-    no-repeat;
+    background: url(https://www.telegraph.co.uk/content/dam/news/2016/05/17/1222044_News__students_throw_mortarboards_-_JULY_14___trans_NvBQzQNjv4BqTh3H5BemKyhXFKdcxJGxV7c8h33CQspnMpifI37ZQX8.jpg) no-repeat;
     background-size: cover;
 
     background-origin: border-box;
@@ -45,9 +45,11 @@ body {
 
     display: block;
 }
+
 #navbar {
     width: 100%;
 }
+
 .nav-logo {
     display: flex;
     justify-content: space-between;
@@ -57,6 +59,7 @@ body {
 .nav-logo button {
     margin-right: 20px;
 }
+
 #navbar {
     padding-top: 15px;
 }
@@ -83,7 +86,6 @@ button {
 
 .nav-logo h1 a {
     margin-left: 20px;
-    font-size: 27px;
     color: white;
     font-family: "Open Sans", sans-serif;
     display: initial;
@@ -104,11 +106,11 @@ button {
 }
 
 .content h1 {
-    
+
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: clamp(0.8rem, 0.rem + 2vw, 30px);
-    color:lemonchiffon
+    font-size: clamp(0.8rem, 2vw, 30px);
+    color: lemonchiffon
 }
 
 .content h3 {
@@ -120,7 +122,7 @@ button {
 }
 
 .content p {
-    color: whit;
+    color: white;
     font-size: clamp(0.7rem, 0.5rem + 2vw, 16px);
 
     text-shadow: 2px 2px 8px #000;
@@ -140,7 +142,6 @@ button {
 }
 
 .content .btn-green {
-    border-style: unset;
     color: #fff;
     border: 1px solid #fff;
     font-size: clamp(0.5rem, 0.5rem + 1vw, 16px);
@@ -160,34 +161,41 @@ button {
     align-content: center;
     align-items: center;
 }
+
 .textcenter {
     text-align: center;
 }
+
 .textgreen {
     color: #a3c962 !important;
 }
+
 .context {
     line-height: 1.1rem;
 }
+
 .context h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.27rem;
     font-weight: 550;
 }
+
 .context p {
     font-size: 15px;
     color: #676662;
     letter-spacing: 1px;
-    padding: 10px 0px;
+    padding: 10px 0;
     line-height: 28px;
     margin-bottom: 20px;
 }
+
 .context2 {
     display: block;
 
     width: 100%;
 }
+
 .fern {
     display: flex;
 
@@ -203,15 +211,17 @@ button {
 .ferncontext h3 {
     margin-bottom: 15px;
 }
+
 .lightertext {
     font-weight: 100;
     font-size: 25px;
 }
+
 .ferncontext p {
     font-size: 1rem;
     color: #676662;
     letter-spacing: 1px;
-    padding: 10px 0px;
+    padding: 10px 0;
     line-height: 28px;
     margin-bottom: 20px;
 }
@@ -230,6 +240,7 @@ button {
 
     text-align: center;
 }
+
 .seventyfive {
     text-align: center;
 }
@@ -247,6 +258,7 @@ button {
     border-radius: 50%;
     transform: rotate(135deg);
 }
+
 .progress-left {
     width: 90px;
     height: 90px;
@@ -258,6 +270,7 @@ button {
     z-index: 1;
     transform: rotate(-135deg);
 }
+
 .progress-right {
     width: 40%;
     height: 25%;
@@ -266,6 +279,7 @@ button {
     /* position: relative;
       left: 20%; */
 }
+
 .progress-value {
     position: relative;
     top: 1.95rem;
@@ -273,6 +287,7 @@ button {
     font-size: 30px;
     color: #049dff;
 }
+
 .progress-status {
     display: flex;
     justify-content: center;
@@ -364,17 +379,18 @@ button {
 /* forest forest forest forest forest forest  */
 
 .forest {
-    background: url(https://hips.hearstapps.com/hmg-prod/images/berry-college-historic-campus-at-twilight-royalty-free-image-1652127954.jpg?crop=1.00xw:0.752xh;0.00160xw,0.120xh&resize=1200:*);
     padding-bottom: 4%;
-    background-repeat: no-repeat;
+    background: url(https://hips.hearstapps.com/hmg-prod/images/berry-college-historic-campus-at-twilight-royalty-free-image-1652127954.jpg?crop=1.00xw:0.752xh;0.00160xw,0.120xh&resize=1200:*) no-repeat;
     background-size: cover;
 }
+
 .forest--text {
     display: block;
 
     text-align: center;
     padding: 10px;
 }
+
 .forest--text {
     color: #fff;
 }
@@ -388,6 +404,7 @@ button {
     color: #fff;
     font-weight: lighter;
 }
+
 .forest__paragraph > p {
     line-height: 30px;
     font-weight: lighter;
@@ -400,14 +417,17 @@ button {
     margin: 3%;
     padding: 5%;
 }
+
 .box span > i {
     font-size: 1.6rem;
 }
+
 .box > p {
     letter-spacing: 0.4px;
     line-height: 32px;
     color: #676662;
 }
+
 .box > h2 {
     color: #a3c962;
     padding: 10px;
@@ -451,6 +471,7 @@ button {
 .about--imgcolumn1 {
     width: 45.5%;
 }
+
 .about__innerimage {
     width: 100%;
 }
@@ -477,10 +498,12 @@ button {
     .ferncontext {
         width: 79%;
     }
+
     .progressbars {
         display: flex;
         justify-content: space-around;
     }
+
     /* forest forest forest  */
     .forest--boxes {
         width: 100%;
@@ -497,6 +520,7 @@ button {
 
         margin: 10px;
     }
+
     /* about about about about about*/
 }
 
@@ -515,10 +539,12 @@ button {
         align-items: center;
         justify-content: space-between;
     }
+
     #navbar ul {
         display: flex;
         margin-right: 3rem;
     }
+
     #navbar ul li {
         padding: 0 1rem;
     }
@@ -527,6 +553,7 @@ button {
         display: block;
         width: 58.85%;
     }
+
     .progressbars {
         width: 67%;
     }
@@ -535,11 +562,13 @@ button {
         display: flex;
         align-items: center;
     }
+
     .fern {
         width: 50%;
 
         height: max-content;
     }
+
     .fern img {
         margin-right: auto;
         margin-left: auto;
@@ -549,19 +578,21 @@ button {
     }
 
     /* forest forest forest forest forest forest */
-
     .forest {
         height: 100%;
     }
+
     .forest--text {
         display: flex;
         align-items: center;
         padding-top: 25px;
     }
+
     .forest__paragraph > p {
         font-size: 14px;
         letter-spacing: 0.5px;
     }
+
     .forest__paragraph {
         text-align: end;
         width: 35%;
@@ -596,6 +627,7 @@ button {
         width: 100%;
         margin-left: 5%;
     }
+
     .about__imgrow1 {
         display: flex;
         width: 100%;
@@ -604,6 +636,7 @@ button {
     .about--imgcolumn2 {
         width: 100%;
     }
+
     .about__imgrow2 {
         display: flex;
         width: 100%;
